@@ -6,7 +6,7 @@ import hero from "@/public/hero.png";
 
 export const HeroSection = () => {
     return (
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center sm:justify-between px-4 w-full md:w-10/12 h-full">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center sm:justify-between w-full  h-full bg-[#FEEFE8] px-4 md:px-28">
             <div className="max-w-xl w-full h-full mt-8 lg:mt-0">
                 <div className="flex items-center space-x-2 mb-4">
                     <a href="#" className="text-red-500 hover:underline">Home</a>
