@@ -24,8 +24,8 @@ export const FeaturesSection = () => {
             {/* Features Section */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                 {/* Quality Assured */}
-                <div className="flex flex-col items-center text-center">
-                    <div className="bg-[#FFF8F6] p-4 rounded-xl">
+                    <div className="flex flex-col p-6 items-center text-center group hover:bg-orange-50 hover:rounded-xl  hover:shadow-md">
+                        <div className="bg-[#FFF8F6] group-hover:bg-orange-500 text-white p-4 rounded-xl">
                         <Image src={shield?.src} width={48} height={48} alt="Quality Assured" className="h-12 w-12" />
                     </div>
                     <h3 className="text-lg font-bold mt-4">Quality Assured</h3>
@@ -46,8 +46,8 @@ export const FeaturesSection = () => {
                 </div>
 
                 {/* Chemical Free */}
-                <div className="flex flex-col items-center text-center">
-                    <div className="bg-[#FFF8F6] p-4 rounded-xl">
+                    <div className="flex flex-col p-6 items-center text-center group hover:bg-orange-50 hover:rounded-xl  hover:shadow-md">
+                        <div className="bg-[#FFF8F6] group-hover:bg-orange-500 text-white p-4 rounded-xl">
                         <Image src={lab?.src} width={48} height={48} alt="Chemical Free" className="h-12 w-12" />
                     </div>
                     <h3 className="text-lg font-bold mt-4">Chemical Free</h3>
@@ -57,6 +57,7 @@ export const FeaturesSection = () => {
                 </div>
             </div>
         </div>
+        {/* Second screen */}
             <div className=" relative bg-white py-12 sm:py-20 lg:py-28 min-h-screen max-w-screen-2xl w-full">
                 <div className="container mx-auto px-4">
                     <div className="absolute top-10 z-20">

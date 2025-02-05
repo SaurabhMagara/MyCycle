@@ -29,12 +29,12 @@ export const Navbar = () => {
             </div>
 
             <div className="hidden md:flex space-x-8">
-                <a href="#" className="text-red-500">HOME</a>
-                <a href="#" className="text-gray-700">SHOP</a>
-                <a href="#" className="text-gray-700">FAQ'S</a>
-                <a href="#" className="text-gray-700">STOCKISTS</a>
-                <a href="#" className="text-gray-700">WHOLESALE</a>
-                <a href="#" className="text-gray-700">CONTACT</a>
+                <a href="#" className="text-gray-700 hover:text-red-500">HOME</a>
+                <a href="#" className="text-gray-700 hover:text-red-500">SHOP</a>
+                <a href="#" className="text-gray-700 hover:text-red-500">FAQ'S</a>
+                <a href="#" className="text-gray-700 hover:text-red-500">STOCKISTS</a>
+                <a href="#" className="text-gray-700 hover:text-red-500">WHOLESALE</a>
+                <a href="#" className="text-gray-700 hover:text-red-500">CONTACT</a>
             </div>
 
             <div className="flex items-center space-x-4">
