@@ -39,11 +39,6 @@ export const Navbar = () => {
 
             <div className="flex items-center space-x-4">
                 <div className="md:hidden">
-                    {/* {isMenuOpen ? (
-                        <X className="w-6 h-6 text-gray-700" />
-                    ) : (
-                        <Menu className="w-6 h-6 text-gray-700" />
-                    )} */}
                     {/* Only render menu when client is mounted */}
                     {isClient && (
                         <div className="md:hidden">
@@ -55,10 +50,10 @@ export const Navbar = () => {
                         </div>
                     )}
                 </div>
-                <Search className="w-5 h-5 text-gray-700 hidden md:block" />
-                <User className="w-5 h-5 text-gray-700 hidden md:block" />
+                <Search className="w-5 h-5 text-gray-700 hidden md:block cursor-pointer hover:text-red-500" />
+                <User className="w-5 h-5 text-gray-700 hidden md:block cursor-pointer hover:text-red-500" />
                 <div className="relative hidden md:block">
-                    <ShoppingCart className="w-5 h-5 text-gray-700" />
+                    <ShoppingCart className="w-5 h-5 text-gray-700 cursor-pointer hover:text-red-500" />
                     <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
                         0
                     </span>

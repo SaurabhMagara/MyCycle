@@ -58,7 +58,7 @@ export const FeaturesSection = () => {
             </div>
         </div>
         {/* Second screen */}
-            <div className=" relative bg-white py-12 sm:py-20 lg:py-28 min-h-screen max-w-screen-2xl w-full">
+            <div className=" relative bg-white py-12 sm:py-20 lg:py-28 max-h-screen-2xl w-full border border-green-500">
                 <div className="container mx-auto px-4">
                     <div className="absolute top-10 z-20">
                         <Image src={flower?.src} alt="flower" height={flower?.height} width={flower?.width} className="opacity-40" />
@@ -70,11 +70,11 @@ export const FeaturesSection = () => {
                     </div>
                
                     {/* Sample Menstrual Cups Image (Replace with your actual image) */}
-                    <div className="mt-12 sm:mt-20 lg:mt-28 flex justify-center ">
+                    <div className="sm:mt-20 lg:mt-28 flex justify-center ">
                         <Image
                             src={cup?.src} 
                             height={cup?.height}
-                            width={10}
+                            width={cup?.width}
                             alt="Menstrual Cups"
                             className="max-w-full h-auto"
                         />
