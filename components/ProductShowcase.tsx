@@ -5,7 +5,7 @@ import cups from "@/public/cups.png";
 
 const ProductShowcase = () => {
     return (
-        <section className="flex flex-col max-h-screen md:flex-row items-center justify-between bg-[#FFF7F3] px-6 md:px-16 py-12 md:py-28 rounded-bl-[250px]">
+        <section className="flex flex-col max-h-screen md:flex-row items-center justify-between bg-[#FFF7F3] px-6 md:px-16 py-12 md:py-28 rounded-bl-[250px] gap-5 md:gap-0">
             {/* Left Side: Image */}
             <div className="w-full md:w-1/2 flex justify-center rounded-full">
                 <Image

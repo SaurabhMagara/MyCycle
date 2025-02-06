@@ -5,6 +5,10 @@ import {HeroSection} from "@/components/HeroSection";
 import {FeaturesSection} from "@/components/FeautersSection"
 import ProductShowcase from "@/components/ProductShowcase";
 import Chart from "@/components/Chart";
+import ProductDetails from "@/components/ProductDetails";
+import Testimonials from "@/components/TestimonialsCarousel";
+import AccordianQuestions from "@/components/AccordianQuestions";
+
 
 export default function Home() {
   return (
@@ -14,6 +18,9 @@ export default function Home() {
       <FeaturesSection />
       <ProductShowcase />
       <Chart />
+      <ProductDetails />
+      <Testimonials/>
+      <AccordianQuestions/>
     </div>
   );
 }
