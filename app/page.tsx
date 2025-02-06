@@ -8,6 +8,7 @@ import Chart from "@/components/Chart";
 import ProductDetails from "@/components/ProductDetails";
 import Testimonials from "@/components/TestimonialsCarousel";
 import AccordianQuestions from "@/components/AccordianQuestions";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <ProductDetails />
       <Testimonials/>
       <AccordianQuestions/>
+      <Footer/>
     </div>
   );
 }
