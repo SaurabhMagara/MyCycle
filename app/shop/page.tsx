@@ -7,8 +7,8 @@ import cups from "@/public/cups.png"
 import cupinhand from "@/public/cupinhand.png"
 import product from "@/public/product.png"
 import { Navbar } from '@/components/Navbar';
-import ProductDetailsTabs from '@/components/ProductDetailsTabs';
-import ProductDetailsFooter from '@/components/ProductDetailsFooter';
+import ProductDetailsTabs from '@/components/shop/ProductDetailsTabs';
+import ProductDetailsFooter from '@/components/shop/ProductDetailsFooter';
 
 interface ProductImage {
     id: number;
@@ -102,7 +102,7 @@ export default function ProductDetail() {
                   </button>
                 </div>
 
-                <button className="border border-[#C3B1B1] text-[#C3B1B1] px-8 py-2 w-2/3 rounded transition-colors">
+                <button className="border border-[#C3B1B1] text-[#C3B1B1] hover:bg-[#F6623E] hover:border-0 hover:text-[white] px-8 py-2 w-2/3 rounded transition-colors">
                   ADD TO CART
                 </button>
               </div>

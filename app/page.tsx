@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className=" flex flex-col items-center  min-h-screen  w-full text-black">
+    <div className="relative flex flex-col items-center  min-h-screen  w-full text-black scroll-smooth">
       <Navbar />
       <HeroSection />
       <FeaturesSection />

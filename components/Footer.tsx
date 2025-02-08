@@ -30,7 +30,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-white py-12 px-4 pt-16 w-full">
+        <footer id='contactus' className="bg-white py-12 px-4 pt-16 w-full">
             <div className="flex flex-col w-full justify-center items-center">
                 {/* Contents */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 w-11/12">

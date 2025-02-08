@@ -27,7 +27,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex items-center justify-between px-4 md:px-8 py-4 bg-white shadow w-full">
+    <nav className="sticky top-0 flex items-center justify-between px-4 md:px-8 py-4 bg-white shadow w-full z-50">
       <div className="flex items-center">
         <h1 className="text-2xl font-bold text-black">
           My C<span className="text-red-500">y</span>cle
@@ -41,16 +41,16 @@ export const Navbar = () => {
         <Link href="/shop" className={linkClasses("/shop")}>
           SHOP
         </Link>
-        <Link href={"/"} className="text-gray-700">
+        <Link href="#faq" className="text-gray-700 scroll-smooth">
           FAQ'S
         </Link>
         <Link href={"/"} className="text-gray-700">
           STOCKISTS
         </Link>
-        <Link href={"/"} className="text-gray-700">
+        <Link href="#wholesale" className="text-gray-700">
           WHOLESALE
         </Link>
-        <Link href={"/"} className="text-gray-700">
+        <Link href="#contactus" className="text-gray-700">
           CONTACT
         </Link>
       </div>

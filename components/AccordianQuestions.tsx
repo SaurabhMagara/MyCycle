@@ -7,7 +7,7 @@ import {
 
 export default function AccordianQuestions() {
     return (
-        <div className="w-11/12 lg:w-7/12 h-screen flex flex-col items-center py-10">
+        <div id="faq" className="w-11/12 lg:w-7/12 h-screen flex flex-col items-center py-10">
             <div className="flex justify-center items-center">
                 <h2 className="w-auto text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl z-50 py-5 md:pb-20 px-5">
                     Frequently asked questions?
