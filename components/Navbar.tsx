@@ -41,7 +41,7 @@ export const Navbar = () => {
         <Link href="/shop" className={linkClasses("/shop")}>
           SHOP
         </Link>
-        <Link href="#faq" className="text-gray-700 scroll-smooth">
+        <Link href="/#faq" className="text-gray-700 scroll-smooth">
           FAQ'S
         </Link>
         <Link href={"/"} className="text-gray-700">
