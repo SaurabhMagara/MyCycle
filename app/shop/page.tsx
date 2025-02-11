@@ -9,6 +9,7 @@ import product from "@/public/product.png"
 import { Navbar } from '@/components/Navbar';
 import ProductDetailsTabs from '@/components/shop/ProductDetailsTabs';
 import ProductDetailsFooter from '@/components/shop/ProductDetailsFooter';
+import { useRouter } from 'next/navigation';
 
 interface ProductImage {
     id: number;
@@ -26,6 +27,11 @@ export default function ProductDetail() {
     const [selectedImage, setSelectedImage] = useState(images[0].url);
     const [selectedSize, setSelectedSize] = useState('S-M');
     const [quantity, setQuantity] = useState(1);
+
+    const router = useRouter();
+    const handleClick = () =>{
+      router.push("shop/cart");
+    }
 
     return (
       <>
@@ -102,7 +108,7 @@ export default function ProductDetail() {
                   </button>
                 </div>
 
-                <button className="border border-[#C3B1B1] text-[#C3B1B1] hover:bg-[#F6623E] hover:border-0 hover:text-[white] px-8 py-2 w-2/3 rounded transition-colors">
+                <button onClick={handleClick} className="border border-[#C3B1B1] text-[#C3B1B1] hover:bg-[#F6623E] hover:border-0 hover:text-[white] px-8 py-2 w-2/3 rounded transition-colors">
                   ADD TO CART
                 </button>
               </div>

@@ -179,7 +179,7 @@ const ProductDetailsTabs: React.FC<ProductDetailsTabsProps> = ({
             {/* Form for submiting reviews */}
             <form
               onSubmit={handleSubmitReview}
-              className="space-y-4 px-5 md:w-2/3 md:px-10 "
+              className="space-y-4 px-5 md:w-2/3 md:px-10 py-8 md:py-0 border border-black "
             >
               <h3 className="text-xl font-semibold">Add a Review</h3>
               <p className="text-sm text-gray-600">

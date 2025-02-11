@@ -27,6 +27,7 @@ import React, { useState } from "react";
 import cup from "@/public/cup.png";
 import { Navbar } from "@/components/Navbar";
 import ProductDetailsFooter from "@/components/shop/ProductDetailsFooter";
+import { useRouter } from "next/navigation";
 
 export default function Cart(){
   const [products, setProducts] = useState<Product[]>([
@@ -93,6 +94,12 @@ export default function Cart(){
   };
 
   const totals = calculateTotals();
+
+  const router = useRouter();
+
+  const handleClick = ()=>{
+    router.push("cart/checkout")
+  }
 
   return (
     <>
@@ -250,7 +257,7 @@ export default function Cart(){
               <span>${totals.total.toFixed(2)}</span>
             </div>
 
-            <button className="w-full p-3 bg-[#F6623E] text-white rounded hover:bg-[#f95931]">
+            <button className="w-full p-3 bg-[#F6623E] text-white rounded hover:bg-[#f95931]" onClick={handleClick}>
               Proceed to Checkout
             </button>
           </div>
